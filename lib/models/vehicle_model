@@ -1,0 +1,141 @@
+class Vehicle {
+  String? make;
+  String? model;
+  int? year;
+  String? color;
+  int? mileage;
+  bool? isCheckedIn;
+  String? time;
+  String? vehicleNumbers;
+  Owner? owner;
+  List<RecentLocations>? recentLocations;
+  String? image;
+
+  Vehicle(
+      {this.make,
+      this.model,
+      this.year,
+      this.color,
+      this.mileage,
+      this.isCheckedIn,
+      this.time,
+      this.vehicleNumbers,
+      this.owner,
+      this.recentLocations,
+      this.image});
+
+  Vehicle.fromJson(Map<String, dynamic> json) {
+    make = json['make'];
+    model = json['model'];
+    year = json['year'];
+    color = json['color'];
+    mileage = json['mileage'];
+    isCheckedIn = json['isCheckedIn'];
+    time = json['time'];
+    vehicleNumbers = json['vehicleNumbers'];
+    owner = json['owner'] != null ? new Owner.fromJson(json['owner']) : null;
+    if (json['recentLocations'] != null) {
+      recentLocations = <RecentLocations>[];
+      json['recentLocations'].forEach((v) {
+        recentLocations!.add(new RecentLocations.fromJson(v));
+      });
+    }
+    image = json['image'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['make'] = this.make;
+    data['model'] = this.model;
+    data['year'] = this.year;
+    data['color'] = this.color;
+    data['mileage'] = this.mileage;
+    data['isCheckedIn'] = this.isCheckedIn;
+    data['time'] = this.time;
+    data['vehicleNumbers'] = this.vehicleNumbers;
+    if (this.owner != null) {
+      data['owner'] = this.owner!.toJson();
+    }
+    if (this.recentLocations != null) {
+      data['recentLocations'] =
+          this.recentLocations!.map((v) => v.toJson()).toList();
+    }
+    data['image'] = this.image;
+    return data;
+  }
+}
+
+class Owner {
+  String? name;
+  String? email;
+  String? phone;
+  Address? address;
+
+  Owner({this.name, this.email, this.phone, this.address});
+
+  Owner.fromJson(Map<String, dynamic> json) {
+    name = json['name'];
+    email = json['email'];
+    phone = json['phone'];
+    address =
+        json['address'] != null ? new Address.fromJson(json['address']) : null;
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['name'] = this.name;
+    data['email'] = this.email;
+    data['phone'] = this.phone;
+    if (this.address != null) {
+      data['address'] = this.address!.toJson();
+    }
+    return data;
+  }
+}
+
+class Address {
+  String? street;
+  String? city;
+  String? state;
+  String? zip;
+
+  Address({this.street, this.city, this.state, this.zip});
+
+  Address.fromJson(Map<String, dynamic> json) {
+    street = json['street'];
+    city = json['city'];
+    state = json['state'];
+    zip = json['zip'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['street'] = this.street;
+    data['city'] = this.city;
+    data['state'] = this.state;
+    data['zip'] = this.zip;
+    return data;
+  }
+}
+
+class RecentLocations {
+  String? address;
+  String? date;
+  String? description;
+
+  RecentLocations({this.address, this.date, this.description});
+
+  RecentLocations.fromJson(Map<String, dynamic> json) {
+    address = json['address'];
+    date = json['date'];
+    description = json['description'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['address'] = this.address;
+    data['date'] = this.date;
+    data['description'] = this.description;
+    return data;
+  }
+}

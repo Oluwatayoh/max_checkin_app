@@ -1,0 +1,239 @@
+[
+  {
+    "make": "Nissan",
+    "model": "GTR",
+    "year": 2022,
+    "color": "white",
+    "mileage": 5000,
+    "isCheckedIn": true,
+    "time": "2022-01-01T08:00:00Z",
+    "vehicleNumbers": "KA01AB1234",
+    "owner": {
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "phone": "+1 (555) 123-4567",
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+      }
+    },
+    "recentLocations": [
+      {
+        "address": "100 Market St, San Francisco, CA. 94105",
+        "date": "2023-03-11T14:30:00.000Z",
+        "description": "Parked near the Ferry Building"
+      },
+      {
+        "address": "1195 Pacific Ave, San Francisco, CA. 94109",
+        "date": "2023-03-05T18:45:00.000Z",
+        "description": "Parked near Nob Hill"
+      }
+    ],
+    "image": "assets/images/nissan_gtr_3.png"
+  },
+  {
+    "make": "Land Rover",
+    "model": "Sport",
+    "year": 2020,
+    "color": "Black",
+    "mileage": 15000,
+    "isCheckedIn": false,
+    "time": "",
+    "vehicleNumbers": "TN02CD5678",
+    "owner": {
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "phone": "+1 (555) 987-6543",
+      "address": {
+        "street": "456 Elm St",
+        "city": "Anycity",
+        "state": "NY",
+        "zip": "54321"
+      }
+    },
+    "recentLocations": [
+      {
+        "address": "225 Broadway, New York, NY. 10007",
+        "date": "2023-03-10T12:15:00.000Z",
+        "description": "Parked near the courthouse"
+      },
+      {
+        "address": "1600 Pennsylvania Ave NW, Washinton, DC. 20500",
+        "date": "2023-03-04T19:00:00.000Z",
+        "description": "Parked near the White House"
+      }
+    ],
+    "image": "assets/images/land_rover_0.png" },
+  {
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 2020,
+    "color": "white",
+    "mileage": 20000,
+    "isCheckedIn": true,
+    "time": "2022-01-08T08:00:00Z",
+    "vehicleNumbers": "MH12EF9012",
+    "owner": {
+      "name": "David Lee",
+      "email": "davidlee@example.com",
+      "phone": "+1 (555) 123-4567",
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+      }
+    },
+    "recentLocations": [
+      {
+        "address": "800 W Olympic Blvd Los Angeles, CA. 90015",
+        "description": "Parked near the Staples Center",
+        "date": "2023-03-11T11:00:00.000Z"
+      },
+      {
+        "address": "850 N State St, Chicago, IL. 60610",
+        "description": "Parked near the Magnificent Mile",
+        "date": "2023-03-05T13:30:00.000Z"
+      }
+    ],
+    "image": "assets/images/ford_0.png" },
+  {
+    "make": "BMW",
+    "model": "X5",
+    "year": 2019,
+    "color": "Blue",
+    "mileage": 25000,
+    "isCheckedIn": false,
+    "time": "",
+    "vehicleNumbers": "VDJFHVURW5334",
+    "owner": {
+      "name": "Emily Jones",
+      "email": "emilyjones@example.com",
+      "phone": "+1 (555) 987-6543",
+      "address": {
+        "street": "456 Elm St",
+        "city": "Anycity",
+        "state": "NY",
+        "zip": "54321"
+      }
+    },
+    "recentLocations": [],
+    "image": "assets/images/ferrari_spider_488_1.png" },
+  {
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2018,
+    "color": "Grey",
+    "mileage": 35000,
+    "isCheckedIn": true,
+    "time": "2022-02-13T08:00:00Z",
+    "vehicleNumbers": "LKSA637222",
+    "owner": {
+      "name": "John Smith",
+      "email": "johnsmith@example.com",
+      "phone": "+1 (555) 123-4567",
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+      }
+    },
+    "recentLocations": [],
+    "image": "assets/images/honda_0.png" },
+  {
+    "make": "Mercedes-Benz",
+    "model": "GLE",
+    "year": 2020,
+    "color": "Silver",
+    "mileage": 18000,
+    "isCheckedIn": false,
+    "vehicleNumbers": "UYI2364273",
+    "owner": {
+      "name": "Ava Johnson",
+      "email": "avajohnson@example.com",
+      "phone": "+1 (555) 987-6543",
+      "address": {
+        "street": "456 Elm St",
+        "city": "Anycity",
+        "state": "NY",
+        "zip": "54321"
+      }
+    },
+    "recentLocations": [
+      {
+        "address": "139 Flatbush Ave, Brooklyn, NY. 11217",
+        "description": "Parked near the Barclays Center",
+        "date": "2023-03-10T18:00:00.000Z"
+      }
+    ],
+    "image": "assets/images/fiat_0.png"},
+  {
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2018,
+    "color": "white",
+    "mileage": 35000,
+    "isCheckedIn": true,
+    "time": "2022-01-01T08:00:00Z",
+    "vehicleNumbers": "ASUAI8379428",
+    "owner": {
+      "name": "John Smith",
+      "email": "johnsmith@example.com",
+      "phone": "+1 (555) 123-4567",
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+      }
+    },
+    "recentLocations": [
+      {
+        "address": "2155 E Lincoln Hwy, Langhorne, PA 19047",
+        "description": "Parked near Oxford Valley Mall",
+        "date": "2023-03-11T09:00:00.000Z"
+      },
+      {
+        "address": "2200 Petaluma Blvd N, Petaluma, CA 94952",
+        "description": "Parked near the Petaluma Outlets",
+        "date": "2023-03-05T14:30:00.000Z"
+      }
+    ],
+    "image": "assets/images/honda_0.png" },
+  {
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 2021,
+    "color": "white",
+    "mileage": 12000,
+    "isCheckedIn": false,
+    "time": "",
+    "vehicleNumbers": "WQE4723809",
+    "owner": {
+      "name": "Jessica Lee",
+      "email": "jessicalee@example.com",
+      "phone": "+1 (555) 555-5555",
+      "address": {
+        "street": "1234 Elm St",
+        "city": "Anycity",
+        "state": "NY",
+        "zip": "54321"
+      }
+    },
+    "recentLocations": [
+      {
+        "address": "8000 E Jefferson Ave, Detroit, MI 48214",
+        "description": "Parked near Belle Isle Park",
+        "date": "2023-03-08T10:00:00.000Z"
+      },
+      {
+        "address": "2500 Victory Ave, Dallas, TX 75219",
+        "description": "Parked near American Airlines Center",
+        "date": "2023-03-03T19:30:00.000Z"
+      }
+    ],
+    "image": "assets/images/ford_1.png"  }
+]
